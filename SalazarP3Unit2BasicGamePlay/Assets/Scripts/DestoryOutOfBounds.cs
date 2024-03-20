@@ -9,7 +9,7 @@ public class DestoryOutOfBounds : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -22,8 +22,9 @@ public class DestoryOutOfBounds : MonoBehaviour
         }
         else if (transform.position.z < lowerBound)
         {
+            Debug.Log("Game Over!");
             Destroy(gameObject);
         }
     }
-        
+
 }
